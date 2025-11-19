@@ -127,13 +127,14 @@ const ChapterReader = () => {
       {/* Chapter Content */}
       <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-gray-800 dark:to-gray-900 rounded-lg border-4 border-amber-300 dark:border-gray-600 p-4 sm:p-6 md:p-8 lg:p-12 mx-auto max-w-full sm:max-w-4xl mb-8">
         <div
-          className="prose prose-base sm:prose-lg dark:prose-invert max-w-none font-serif leading-loose text-gray-800 dark:text-gray-100 text-base sm:text-lg"
+          className="prose prose-base sm:prose-lg dark:prose-invert max-w-none font-serif text-gray-800 dark:text-gray-100"
           style={{
-            lineHeight: '1.8',
+            lineHeight: '1.7',
             textAlign: 'justify',
-            textJustify: 'inter-word',
-            fontSize: 'clamp(14px, 3vw, 16px)',
-            fontFamily: '"Times New Roman", Times, serif'
+            fontSize: '16px',
+            fontFamily: '"Times New Roman", Times, serif',
+            letterSpacing: '0.01em',
+            wordSpacing: '0.1em'
           }}
           dangerouslySetInnerHTML={{ __html: currentChapter.content }}
         />
