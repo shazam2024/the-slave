@@ -27,25 +27,25 @@ export const bookData = {
               }
 
               p {
-                font-size: 1.125rem;
+                font-size: clamp(0.875rem, 2.5vw, 1.125rem);
                 line-height: 1.9;
                 color: #2d3748;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 text-align: justify;
               }
 
               h2 {
-                font-size: 2rem;
+                font-size: clamp(1.25rem, 4vw, 2rem);
                 font-weight: 700;
                 color: #78350f;
-                margin-top: 3rem;
-                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
                 border-bottom: 3px solid #d97706;
                 padding-bottom: 0.5rem;
               }
 
               h3 {
-                font-size: 1.5rem;
+                font-size: clamp(1.125rem, 3vw, 1.5rem);
                 font-weight: 600;
                 color: #92400e;
                 margin-bottom: 1rem;
@@ -182,25 +182,25 @@ export const bookData = {
               }
 
               p {
-                font-size: 1.125rem;
+                font-size: clamp(0.875rem, 2.5vw, 1.125rem);
                 line-height: 1.9;
                 color: #2d3748;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 text-align: justify;
               }
 
               h2 {
-                font-size: 2rem;
+                font-size: clamp(1.25rem, 4vw, 2rem);
                 font-weight: 700;
                 color: #78350f;
-                margin-top: 3rem;
-                margin-bottom: 1.5rem;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
                 border-bottom: 3px solid #d97706;
                 padding-bottom: 0.5rem;
               }
 
               h3 {
-                font-size: 1.5rem;
+                font-size: clamp(1.125rem, 3vw, 1.5rem);
                 font-weight: 600;
                 color: #92400e;
                 margin-bottom: 1rem;

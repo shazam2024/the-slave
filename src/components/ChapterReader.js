@@ -85,15 +85,15 @@ const ChapterReader = () => {
             style={{ width: `${progress}%` }}
           ></div>
         </div>
-        <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 mt-2">
+        <div className="flex flex-col sm:flex-row justify-between text-xs sm:text-sm text-gray-600 dark:text-gray-400 mt-2 gap-1 sm:gap-0">
           <span>{t('chapterOf')} {currentIndex + 1} {t('of')} {allChapters.length}</span>
           <span>{Math.round(progress)}% {t('complete')}</span>
         </div>
       </div>
 
       {/* Chapter Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-serif font-bold text-gray-900 dark:text-gray-100 mb-2">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-gray-900 dark:text-gray-100 mb-2">
           {currentChapter.title}
         </h1>
         <div className="flex items-center justify-between">
@@ -127,14 +127,12 @@ const ChapterReader = () => {
       {/* Chapter Content */}
       <div className="bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-gray-800 dark:to-gray-900 rounded-lg border-4 border-amber-300 dark:border-gray-600 p-4 sm:p-6 md:p-8 lg:p-12 mx-auto max-w-full sm:max-w-4xl mb-8">
         <div
-          className="prose prose-base sm:prose-lg dark:prose-invert max-w-none font-serif text-gray-800 dark:text-gray-100"
+          className="prose prose-sm sm:prose-base lg:prose-lg dark:prose-invert max-w-none font-serif text-gray-800 dark:text-gray-100 text-sm sm:text-base lg:text-lg leading-relaxed"
           style={{
-            lineHeight: '1.7',
             textAlign: 'justify',
-            fontSize: '16px',
             fontFamily: '"Times New Roman", Times, serif',
-            letterSpacing: '0.01em',
-            wordSpacing: '0.1em'
+            hyphens: 'auto',
+            wordBreak: 'break-word'
           }}
           dangerouslySetInnerHTML={{ __html: currentChapter.content }}
         />
